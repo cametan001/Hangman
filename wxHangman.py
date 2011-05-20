@@ -89,7 +89,8 @@ class hmGUI(wx.Frame, hangman.Hangman):
         self.status.SetLabel(txt)
         for row in keys:
             for ch in row:
-                self.letters[ch].Enable()
+                if ch != "":
+                    self.letters[ch].Enable()
 
     def __set_properties(self):
         # begin wxGlade: MyFrame.__set_properties
