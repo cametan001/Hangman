@@ -106,7 +106,6 @@ class hmGUI(wx.Frame, hangman.Hangman):
         sizer_4 = wx.BoxSizer(wx.HORIZONTAL)
         sizer_3 = wx.BoxSizer(wx.HORIZONTAL)
         grid_sizer = wx.GridSizer(7, 4, 0, 0)
-        sizer_3.Add(self.theImg, 0, 0, 0)
 
         # 文字盤を作成
         for row in keys:
@@ -127,10 +126,11 @@ class hmGUI(wx.Frame, hangman.Hangman):
 
         self.Bind(wx.EVT_BUTTON, self.reset, self.button_Refresh)
         self.Bind(wx.EVT_BUTTON, self.Quit, self.button_Quit)
-        
+
+        sizer_3.Add(self.theImg, 2, 0, 0)
         sizer_3.Add(grid_sizer, 1, wx.EXPAND, 0)
         sizer_2.Add(sizer_3, 6, wx.EXPAND, 0)
-        sizer_4.Add(self.status, 1, 0, 0)
+        sizer_4.Add(self.status, 2, 0, 0)
         sizer_4.Add(self.button_Refresh, 1, 0, 0)
         sizer_4.Add(self.button_Quit, 1, 0, 0)
         sizer_2.Add(sizer_4, 1, wx.EXPAND, 0)
