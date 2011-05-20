@@ -17,3 +17,19 @@ AttributeError: 'SizerItem' object has no attribute 'Enable'
 と言うエラーが出ますが、何故かゲーム自体は問題なく遊べます。
 
 GUIのプログラミングって難しいですね。
+
+遊び方：
+開発環境はUbuntu10.10ですが、一応マルチプラットフォームだと思います。
+ただ、要Python。開発では2.6系を用いましたが2.7でもOKだとは思います。
+Linuxディストロの殆どではPythonはインストールされているでしょうが、Windowsの場合は、自分でインストールする必要があるでしょう。
+
+Python標準リリース:
+http://www.python.jp/Zope/download/pythoncore
+
+あと、wxPythonも必要です。
+
+wxPython:
+http://www.wxpython.org/download.php
+
+Handmanをダウンロードしたら適当な場所で展開(解凍)してください。
+あとはwxHangman.pyを起動すれば単語当てゲームが遊べます。
