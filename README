@@ -7,16 +7,7 @@ http://www.pej-hed.jp/washo/263.html
 当初はQtを使うつもりだったのですが、Linux版のQt Creatorがあまりにも不安定なので止めました(笑)。
 Nokiaマジメにやれ(笑)。
 
-一箇所謎のエラーがあります。 対処の方法が分かりません。
-ボタンのアクティブ化に伴って
-
-Traceback (most recent call last):
-  File "<stdin>", line 92, in reset
-AttributeError: 'SizerItem' object has no attribute 'Enable'
-
-と言うエラーが出ますが、何故かゲーム自体は問題なく遊べます。
-
-GUIのプログラミングって難しいですね。
+GUIのプログラミングって難しいね。
 
 遊び方：
 開発環境はUbuntu10.10ですが、一応マルチプラットフォームだと思います。

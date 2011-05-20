@@ -15,7 +15,7 @@ class Game:
         self.displayStart()
         while (self.outcome):
             self.guesses.append(self.GuessType())
-            self.outcome = self.theTarget.eval(self.guesses[-1])
+            self.outcome = self.theTarget.Eval(self.guesses[-1])
             self.display(self.outcome)
 
     # 正しい種類の正解を生成するには、
@@ -61,7 +61,7 @@ class Target:
     def getGoal(self):
         return self.goal
 
-    def eval(self, aGuess):
+    def Eval(self, aGuess):
         return False
 
 # 単純な言葉当てゲーム - フレームワークのテスト用
@@ -102,7 +102,7 @@ class NameTarget(Target):
         return NameGame.names[int(random.random() * \
                                   (len(NameGame.names) - 0.001))]
 
-    def eval(self, aGuess):
+    def Eval(self, aGuess):
         if self.goal == aGuess.value():
             return False
         else:
