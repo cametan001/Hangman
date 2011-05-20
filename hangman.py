@@ -64,7 +64,7 @@ class hmTarget(game.Target):
             sys.exit()
 
     # evalは、あと何回間違ってもよいかの回数を返す
-    def eval(self, aGuess):
+    def Eval(self, aGuess):
         if aGuess.value() not in self.goal:
             self.outcome -= 1
         return self.outcome
