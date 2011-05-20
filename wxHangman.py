@@ -23,7 +23,7 @@ class hmGUIGuess(hangman.hmGuess):
 # end of class hmGUIGuess 
 
 # 多重継承を使う。このゲームクラスは、wxの
-# wxFrameオブジェクトの一種であると同時に、
+# wx.Frameオブジェクトの一種であると同時に、
 # ハングマンゲームのサブクラスでもあるので、両方を継承する
 class hmGUI(wx.Frame, hangman.Hangman):
     def __init__(self, *args, **kwds):
