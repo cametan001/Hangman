@@ -76,7 +76,7 @@ class hmGUI(wx.Frame, hangman.Hangman):
     def reset(self, event):
         # すべての文字に未提示の印をつける
         for l in string.uppercase:
-            self.letters[l].Enable
+            self.letters[l].Enable()
         # 間違ってもよい回数と推測された文字のリストをセットし、
         # 新しい正解を作成する
         self.outcome = 6
@@ -87,10 +87,6 @@ class hmGUI(wx.Frame, hangman.Hangman):
         self.theImg.SetBitmap(wx.Bitmap(self.firstImg, wx.BITMAP_TYPE_ANY))
         txt = "当てる言葉 : \n\t%s" % self.getResult()
         self.status.SetLabel(txt)
-        for row in keys:
-            for ch in row:
-                if ch != "":
-                    self.letters[ch].Enable()
 
     def __set_properties(self):
         # begin wxGlade: MyFrame.__set_properties
